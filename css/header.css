@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  /* background-color: hsl(0, 74%, 52%); */
+  background-color: rgb(224, 224, 224);
+  z-index: 100;
+
+  padding: 0 50px;
+}
+
+.left-side {
+  font-family: League Spartan, Arial;
+  font-size: 30px;
+}
+
+.right-side {
+  display: flex;
+
+  font-size: 18px;
+}
+
+.right-side div {
+  font-family: League Spartan, Arial;
+  margin-left: 30px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.right-side div:hover {
+  border-bottom: 2px solid black;
+}

@@ -1,0 +1,10 @@
+body {
+  margin-top: 80px;
+  margin-bottom: 1000px;
+  padding: 0;
+  background-color: rgb(224, 224, 224);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
