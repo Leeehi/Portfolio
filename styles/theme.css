@@ -1,0 +1,13 @@
+:root {
+  /* Primary Theme Colors */
+  --strong-cyan: #59C3C3;
+  --dusty-grape: #52489C;
+  --platinum: #EBEBEB;
+  --ash-grey: #CAD2C5;
+  --muted-teal: #84A98C;
+
+  /* Text & Background Defaults */
+  --text-color: #333333;
+  --background-color: var(--platinum);
+  --font-size-title: 40px;
+}

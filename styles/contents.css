@@ -1,3 +1,5 @@
+@import url(./theme.css);
+
 .main {
   font-family: Roboto, Arial;
 }
@@ -5,16 +7,17 @@
 .greetings {
   /* background-color: blue; */
   /* border: 1px solid black; */
+  /* margin-bottom: 50px; */
   display: flex;
   align-items: center;
   justify-content: center;
 
   position: relative;
-    overflow-y: hidden;
+  overflow-y: hidden;
 }
 
 .greetings img {
-  padding: 27px 0 0 0;
+  padding: 29px 0 0 0;
   width: 700px;
   /* filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.5)); */
   filter: drop-shadow(2px 2px 10px rgba(0,0,0,0.4)) drop-shadow(-2px -2px 10px rgba(0,0,0,0.2));
@@ -28,7 +31,7 @@
   font-family: League Spartan, Arial;
   font-size: 60px;
   font-weight:bold;
-  color: hsl(240, 56%, 29%);
+  color: var(--strong-cyan);
   line-height: 10px;
 }
 
@@ -41,6 +44,7 @@
   font-size: 20px;
   line-height: 25px;
   font-weight: 500;
+  color: var(--text-color);
 }
 
 .quotes {
@@ -52,25 +56,106 @@
   font-size: 19px;
   line-height: 25px;
   font-weight: 500;
-  /* color: rgb(224, 28, 28); */
+  color: var(--text-color);
 }
 
 .experience {
   position: absolute;
   top: 520px;
-  right: 150px;
+  right: 120px;
 
-  font-weight: 500;
-  font-size: 20px;
-  color: blueviolet ;
+  font-weight: 700;
+  font-size: 25px;
+  color: var(--dusty-grape) ;
 }
 
 .blob {
   position: absolute;
   top: 100px;
 
-  background-color: rgb(221, 26, 26);
+  background-color: var(--muted-teal);
   width: 600px;
   aspect-ratio: 1;
   clip-path: shape(from 92.42% 45.30%,curve to 94.79% 55.24% with 93.69% 50.00%,curve to 94.75% 65.74% with 95.89% 60.48%,curve to 87.98% 73.40% with 93.61% 71.00%,curve to 79.96% 80.18% with 82.36% 75.81%,curve to 73.96% 88.41% with 77.56% 84.56%,curve to 65.68% 95.26% with 70.35% 92.26%,curve to 55.51% 94.76% with 61.02% 98.26%,curve to 44.47% 94.85% with 50.00% 91.27%,curve to 34.58% 94.77% with 38.95% 98.43%,curve to 27.56% 86.28% with 30.21% 91.10%,curve to 20.99% 78.86% with 24.91% 81.46%,curve to 14.00% 72.54% with 17.06% 76.27%,curve to 8.05% 64.52% with 10.94% 68.81%,curve to 4.54% 55.12% with 5.16% 60.24%,curve to 6.26% 45.28% with 3.92% 50.00%,curve to 9.14% 35.57% with 8.61% 40.55%,curve to 10.85% 25.15% with 9.68% 30.58%,curve to 16.42% 16.56% with 12.02% 19.72%,curve to 26.00% 12.17% with 20.82% 13.40%,curve to 35.99% 10.30% with 31.19% 10.94%,curve to 45.40% 9.96% with 40.79% 9.67%,curve to 55.14% 7.61% with 50.00% 10.26%,curve to 65.92% 5.09% with 60.28% 4.96%,curve to 74.11% 10.90% with 71.56% 5.23%,curve to 82.04% 18.37% with 76.65% 16.58%,curve to 88.69% 25.46% with 87.42% 20.16%,curve to 90.55% 35.68% with 89.96% 30.76%,curve to 92.42% 45.30% with 91.15% 40.61%);
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 60px; */
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /* background-color: var(--ash-grey); */
+  /* border: 1px solid black; */
+}
+
+.about-me .title, .projects .title, .contact .title {
+  font-family: League Spartan, Arial;
+  font-weight: bold;
+  font-size: var(--font-size-title);
+  color: var(--strong-cyan);
+}
+
+.about-me .biography {
+  width: 950px;
+  margin-top: 40px;
+
+  font-size: 20px;
+  line-height: 35px;
+  color: var(--text-color);
+}
+
+.projects {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.projects .projects-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 320px 320px 320px;
+  column-gap: 25px;
+  row-gap: 25px;
+}
+
+.projects .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px;
+  /* justify-content: center; */
+
+  /* width: 250px; */
+  height: 350px;
+  background-color: red;
+  border-radius: 8px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card .project-title {
+  margin: 20px 0;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.card .description {
+  font-size: 12px;
+  width: 250px;
+  text-align: center;
+}
+
+.contact {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
