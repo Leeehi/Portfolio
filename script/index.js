@@ -11,6 +11,13 @@ function indexHTML() {
       button.classList.remove('visible');
     }
   })
+
+  button.addEventListener( 'click', () => {
+    const link = document.createElement('a');
+    link.href = "http://lehigalabo.c1.biz/Galabo, Lehi - Resume.pdf";
+    link.download = 'Galabo, Lehi - Resume.pdf';
+    link.click();
+  })
 }
 
 indexHTML();
